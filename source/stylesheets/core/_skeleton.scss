@@ -1,0 +1,332 @@
+/* 
+* Skeleton V1.0.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 5/20/2011
+*/
+
+/* Table of Contents
+==================================================
+	#Base 960 Grid    
+	#Tablet (Portrait)
+	#Mobile (Portrait) 
+	#Mobile (Landscape)
+	#Clearing */
+
+/* #Base 960 Grid 
+================================================== */
+
+.panels-flexible-row-inside, .container {
+  @include container;
+}
+
+.column, .columns {
+  @include columns;
+}
+
+.row {
+  @include row;
+}
+
+/* Nested Column Classes */
+
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+
+.panels-flexible-row-inside, .container {
+  .one-third.column {
+    width: 300px;
+  }
+  .two-thirds.column {
+    width: 620px;
+  }
+}
+
+/* Base Grid */
+
+.panels-flexible-row-inside, .container {
+  .one.column {
+    width: 60px;
+  }
+  .two.columns {
+    width: 140px;
+  }
+  .three.columns {
+    width: 220px;
+  }
+  .four.columns {
+    width: 300px;
+  }
+  .five.columns {
+    width: 380px;
+  }
+  .six.columns {
+    width: 460px;
+  }
+  .seven.columns {
+    width: 540px;
+  }
+  .eight.columns {
+    width: 620px;
+  }
+  .nine.columns {
+    width: 700px;
+  }
+  .ten.columns {
+    width: 780px;
+  }
+  .eleven.columns {
+    width: 860px;
+  }
+  .twelve.columns {
+    width: 940px;
+  }
+  .offset-by-one {
+    margin-left: 80px;
+  }
+  .offset-by-two {
+    margin-left: 160px;
+  }
+  .offset-by-three {
+    margin-left: 240px;
+  }
+  .offset-by-four {
+    margin-left: 320px;
+  }
+  .offset-by-five {
+    margin-left: 400px;
+  }
+  .offset-by-six {
+    margin-left: 480px;
+  }
+  .offset-by-seven {
+    margin-left: 560px;
+  }
+  .offset-by-eight {
+    margin-left: 640px;
+  }
+  .offset-by-nine {
+    margin-left: 720px;
+  }
+  .offset-by-ten {
+    margin-left: 800px;
+  }
+  .offset-by-eleven {
+    margin-left: 880px;
+  }
+}
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .panels-flexible-row-inside, .container {
+    width: 768px;
+  }
+  /*.panels-flexible-row-inside, .container .column, */
+  /*.panels-flexible-row-inside, .container .columns { margin-left: 10px; margin-right: 10px;  }*/
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .panels-flexible-row-inside, .container {
+    .one-third.column {
+      width: 236px;
+    }
+    .two-thirds.column {
+      width: 492px;
+    }
+  }
+  .panels-flexible-row-inside, .container {
+    .one.column {
+      width: 44px;
+    }
+    .two.columns {
+      width: 108px;
+    }
+    .three.columns {
+      width: 172px;
+    }
+    .four.columns {
+      width: 236px;
+    }
+    .five.columns {
+      width: 300px;
+    }
+    .six.columns {
+      width: 364px;
+    }
+    .seven.columns {
+      width: 428px;
+    }
+    .eight.columns {
+      width: 492px;
+    }
+    .nine.columns {
+      width: 556px;
+    }
+    .ten.columns {
+      width: 620px;
+    }
+    .eleven.columns {
+      width: 684px;
+    }
+    .twelve.columns {
+      width: 748px;
+    }
+    .offset-by-one {
+      margin-left: 64px;
+    }
+    .offset-by-two {
+      margin-left: 128px;
+    }
+    .offset-by-three {
+      margin-left: 192px;
+    }
+    .offset-by-four {
+      margin-left: 256px;
+    }
+    .offset-by-five {
+      margin-left: 320px;
+    }
+    .offset-by-six {
+      margin-left: 384px;
+    }
+    .offset-by-seven {
+      margin-left: 448px;
+    }
+    .offset-by-eight {
+      margin-left: 512px;
+    }
+    .offset-by-nine {
+      margin-left: 576px;
+    }
+    .offset-by-ten {
+      margin-left: 640px;
+    }
+    .offset-by-eleven {
+      margin-left: 704px;
+    }
+  }
+}
+
+/*	#Mobile (Portrait) 
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+  .panels-flexible-row-inside, .container {
+    width: 300px;
+  }
+  .columns, .column {
+    margin: 0;
+  }
+  .panels-flexible-row-inside, .container {
+    .one.column, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns, .seven.columns, .eight.columns, .nine.columns, .ten.columns, .eleven.columns, .twelve.columns, .thirteen.columns, .fourteen.columns, .fifteen.columns, .sixteen.columns, .one-third.column, .two-thirds.column {
+      width: 300px;
+    }
+    .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten, .offset-by-eleven, .offset-by-twelve, .offset-by-thirteen, .offset-by-fourteen, .offset-by-fifteen {
+      margin-left: 0;
+    }
+  }
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .panels-flexible-row-inside, .container {
+    width: 420px;
+  }
+  .columns, .column {
+    margin: 0;
+  }
+  .panels-flexible-row-inside, .container {
+    .one.column, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns, .seven.columns, .eight.columns, .nine.columns, .ten.columns, .eleven.columns, .twelve.columns, .thirteen.columns, .fourteen.columns, .fifteen.columns, .sixteen.columns, .one-third.column, .two-thirds.column {
+      width: 420px;
+    }
+  }
+}
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+
+.panels-flexible-row-inside:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns, 
+or wrap each row of columns in a <div class="row"> */
+
+.clearfix {
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.row {
+  &:before {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.row, .clearfix {
+  zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

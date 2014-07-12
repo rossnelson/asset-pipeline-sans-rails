@@ -1,0 +1,183 @@
+@mixin container() { 
+  position: relative; width: 960px; margin: 0 auto; padding: 0; 
+  * {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+  /*& > div {*/
+    /*padding: 0 20px;*/
+  /*}*/
+
+  // ====================================================================
+  // Responsive Container Styles 
+  // ====================================================================
+  
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    width: 768px;
+    .panels-flexible-region {
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    width: 300px; 
+    .panels-flexible-region {
+      padding: 0;
+    }
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    width: 420px; 
+    .panels-flexible-region {
+      padding: 0;
+    }
+  }
+
+  &:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+}
+
+@mixin columns($span: zero, $offset: none, $alpha: none, $omega: none) { 
+  float: left; display: inline; margin-left: 10px; margin-right: 10px; 
+
+  @if $alpha == true { margin-left: 0; }
+  @if $omega == true { margin-right: 0; }
+
+  .one-third { width: 300px; }
+  .two-thirds { width: 620px; }
+
+  &.right {
+    float: right;
+  }
+
+
+  @if $span == one { width: 60px; }
+  @if $span == two { width: 140px; }
+  @if $span == three { width: 220px; }
+  @if $span == four { width: 300px; }
+  @if $span == five { width: 380px; }
+  @if $span == six { width: 460px; }
+  @if $span == seven { width: 540px; }
+  @if $span == eight { width: 620px; }
+  @if $span == nine { width: 700px; }
+  @if $span == ten { width: 780px; }
+  @if $span == eleven { width: 860px; }
+  @if $span == twelve { width: 940px; }
+
+  @if $offset == one { margin-left: 80px; }
+  @if $offset == two { width: 160px; }
+  @if $offset == three { width: 240px; }
+  @if $offset == four { width: 320px; }
+  @if $offset == five { width: 400px; }
+  @if $offset == six { width: 480px; }
+  @if $offset == seven { width: 560px; }
+  @if $offset == eight { width: 640px; }
+  @if $offset == nine { width: 720px; }
+  @if $offset == ten { width: 800px; }
+  @if $offset == eleven { width: 880px; }
+
+  // ====================================================================
+  // Responsive Block Styles 
+  // ====================================================================
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    @if $alpha == true { margin-left: 0; margin-right: 10px; }
+    @if $omega == true { margin-right: 0; margin-right: 10px; }
+
+    .one-third { width: 300px; }
+    .two-thirds { width: 620px; }
+
+    @if $span == one { width: 44px; }
+    @if $span == two { width: 108px; }
+    @if $span == three { width: 172px; }
+    @if $span == four { width: 236px; }
+    @if $span == five { width: 300px; }
+    @if $span == six { width: 364px; }
+    @if $span == seven { width: 428px; }
+    @if $span == eight { width: 492px; }
+    @if $span == nine { width: 556px; }
+    @if $span == ten { width: 620px; }
+    @if $span == eleven { width: 684px; }
+    @if $span == twelve { width: 748px; }
+
+    @if $offset == one { width: 64px; }
+    @if $offset == two { width: 128px; }
+    @if $offset == three { width: 192px; }
+    @if $offset == four { width: 256px; }
+    @if $offset == five { width: 320px; }
+    @if $offset == six { width: 384px; }
+    @if $offset == seven { width: 448px; }
+    @if $offset == eight { width: 512px; }
+    @if $offset == nine { width: 576px; }
+    @if $offset == ten { width: 640px; }
+    @if $offset == eleven { width: 704px; }
+
+    .one-third.column        { width: 236px; }
+    .two-thirds.column       { width: 492px; }   
+
+
+  }
+  @media only screen and (max-width: 767px) {
+    margin: 0; 
+    width: 300px; 
+    margin-left: 0;
+
+    &.right {
+      float: none;
+    }
+    
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    margin: 0; 
+    width: 420px; 
+
+    &.right {
+      float: none;
+    }
+
+  }
+
+}
+
+@mixin row() { 
+  margin-bottom: 20px; 
+  zoom: 1;
+  &:before,
+  &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row, 
+.clearfix {
+  zoom: 1; }
+  
+@mixin clear() {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+

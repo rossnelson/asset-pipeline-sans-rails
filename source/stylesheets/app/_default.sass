@@ -1,0 +1,52 @@
+
+// colors
+$base: #fff
+$primary: #2D2D2D
+$secondary: #055CA4
+$secondary-lighter: lighten($secondary, 10%)
+$complimntary: #F6F6F6
+
+* 
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+.panel-pane
+  +columns($span: twelve)
+
+ul.action-links
+  +columns($span: twelve)
+
+.page-user #block-system-main
+  +container()
+  & > .content
+    +columns($span: twelve)
+
+
+body:not([class*="node"]),
+body[class*="page-node-done"],
+body[class*="page-node-submissions"]
+  #block-system-main
+    +container()
+    .content
+      +columns($span: twelve)
+      padding: 30px 0 0
+
+.messages
+  margin: 30px 10px 20px
+  overflow: hidden
+  padding: 10px
+  border: 5px solid
+
+  &.error 
+    background: #D88F90
+    border-color: #C2464B
+    color: #fff
+
+  &.status
+    color: #687
+    background-color: #ecf8f4
+    border-color: #dce8e4
+
+  ul
+    margin: 0j

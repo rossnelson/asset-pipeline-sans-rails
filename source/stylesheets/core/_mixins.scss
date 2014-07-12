@@ -1,0 +1,20 @@
+@mixin navigation-list() {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  > li{
+    display:block;
+    float:left;
+    &:last-child{
+      margin-right:0px;
+    }
+  }
+}
+
+@mixin parallelogram() {
+  -webkit-transform: skew(-17deg);
+  -moz-transform: skew(-17deg);
+  -o-transform: skew(-17deg);
+}
+
