@@ -13,6 +13,7 @@ gem 'handlebars_assets'
 gem 'sass', '~>3.2.0'
 gem 'coffee-script', '~>2.2.0'
 gem 'uglifier', '~>1.3.0'
+gem "autoprefixer-rails"
 
 #gem 'guard-sass', '~>1.0.0'
 #gem 'guard-coffeescript', '~>1.2.0'
