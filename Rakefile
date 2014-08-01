@@ -22,7 +22,8 @@ task :compile do
   sprockets = Sprockets::Environment.new(ROOT) do |env|
     env.logger = LOGGER
   end
-
+  
+  AutoprefixerRails.install(sprockets)
   sprockets.append_path HandlebarsAssets.path
   sprockets.append_path(SOURCE_DIR.join('fonts').to_s)
   sprockets.append_path(SOURCE_DIR.join('images').to_s)
